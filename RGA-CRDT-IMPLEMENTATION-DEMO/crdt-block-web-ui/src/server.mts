@@ -192,7 +192,7 @@ wss.on("connection", (socket) => {
   });
 });
 
-const port = 8080;
+const port = process.env.PORT || 8081;
 server.listen(port, () => {
   console.log(`Block CRDT Editor running at http://localhost:${port}`);
 });

@@ -1,4 +1,4 @@
-// ../text-crdt/src/identifier.mts
+// ../../crdt-implementation/packages/text-crdt/src/identifier.mts
 var Identifier = class {
   /**
    * Logical counter value.
@@ -28,7 +28,7 @@ var Identifier = class {
   }
 };
 
-// ../text-crdt/src/operation.mts
+// ../../crdt-implementation/packages/text-crdt/src/operation.mts
 var InsertOp = class {
   constructor(id, prevId, value) {
     this.id = id;
@@ -44,7 +44,7 @@ var DeleteOp = class {
   type = "delete";
 };
 
-// ../text-crdt/src/rgaDocument.mts
+// ../../crdt-implementation/packages/text-crdt/src/rgaDocument.mts
 var RgaNode = class {
   id;
   prevId;
@@ -142,7 +142,7 @@ var RgaDocument = class {
   }
 };
 
-// ../text-crdt/src/rgaReplica.mts
+// ../../crdt-implementation/packages/text-crdt/src/rgaReplica.mts
 var RgaReplica = class _RgaReplica {
   constructor(replicaId, clock, doc) {
     this.replicaId = replicaId;

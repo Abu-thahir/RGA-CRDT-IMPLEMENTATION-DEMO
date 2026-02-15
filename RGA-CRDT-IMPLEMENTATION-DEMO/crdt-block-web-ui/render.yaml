@@ -1,0 +1,9 @@
+services:
+  - type: web
+    runtime: node
+    name: crdt-block-editor
+    buildCommand: npm install && npm run build
+    startCommand: npm run dev
+    envVars:
+      - key: NODE_VERSION
+        value: 20.11.0
