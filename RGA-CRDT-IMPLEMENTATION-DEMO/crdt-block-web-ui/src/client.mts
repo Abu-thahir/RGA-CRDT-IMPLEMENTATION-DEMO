@@ -11,7 +11,8 @@ let pendingOps: CRDTOp[] = [];
 let initialOpLog: CRDTOp[] = [];
 
 // WebSocket connection
-const ws = new WebSocket(`ws://${location.host}`);
+const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+const ws = new WebSocket(`${wsProtocol}//${location.host}`);
 let wsReady = false;
 
 // DOM elements

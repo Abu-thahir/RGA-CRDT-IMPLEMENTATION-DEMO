@@ -48,7 +48,8 @@ const replicaMeta = {
   C: { id: 3, color: "#34d399" }
 } as const;
 
-const ws = new WebSocket(`ws://${location.host}`);
+const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+const ws = new WebSocket(`${wsProtocol}//${location.host}`);
 let wsReady = false;
 
 const outboxes: Record<ReplicaKey, SimOp[]> = { A: [], B: [], C: [] };
