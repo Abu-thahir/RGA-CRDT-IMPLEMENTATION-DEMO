@@ -1,0 +1,13 @@
+{
+  "name": "rga-crdt-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "npm run build:text && npm run build:block",
+    "build:text": "cd RGA-CRDT-IMPLEMENTATION-DEMO/crdt-web && npm install && npm run build",
+    "build:block": "cd RGA-CRDT-IMPLEMENTATION-DEMO/crdt-block-web-ui && npm install && npm run build",
+    "dev:text": "cd RGA-CRDT-IMPLEMENTATION-DEMO/crdt-web && npm run dev",
+    "dev:block": "cd RGA-CRDT-IMPLEMENTATION-DEMO/crdt-block-web-ui && npm run dev"
+  }
+}

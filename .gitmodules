@@ -1,0 +1,3 @@
+[submodule "crdt-implementation"]
+	path = crdt-implementation
+	url = https://github.com/ashwinhprasad/RGA-CRDT.git
